@@ -13074,13 +13074,6 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Jun-07,-2020">Jun 07, 2020<a class="anchor-link" href="#Jun-07,-2020">&#182;</a></h1><h2 id="Coin-Change-2">Coin Change 2<a class="anchor-link" href="#Coin-Change-2">&#182;</a></h2>
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
@@ -13097,7 +13090,93 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Jun-06,-2020">Jun 06, 2020<a class="anchor-link" href="#Jun-06,-2020">&#182;</a></h1><h2 id="Queue-Reconstruction-by-Height">Queue Reconstruction by Height<a class="anchor-link" href="#Queue-Reconstruction-by-Height">&#182;</a></h2>
+<h1 id="Jun-08,-2020">Jun 08, 2020<a class="anchor-link" href="#Jun-08,-2020">&#182;</a></h1><h2 id="Power-of-Two"><a href="https://leetcode.com/problems/power-of-two/">Power of Two</a><a class="anchor-link" href="#Power-of-Two">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">isPowerOfTwo</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>   
+        
+        <span class="k">if</span> <span class="n">n</span><span class="o">&lt;</span><span class="mi">0</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">False</span>
+        
+        <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">while</span><span class="p">(</span><span class="n">i</span><span class="o">&lt;</span><span class="mi">32</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">n</span><span class="o">&gt;&gt;</span><span class="n">i</span> <span class="o">&amp;</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+
+        <span class="k">return</span> <span class="n">count</span> <span class="o">==</span> <span class="mi">1</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">isPowerOfTwo</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>   
+        
+        <span class="k">if</span> <span class="n">n</span><span class="o">&lt;=</span><span class="mi">0</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">False</span>
+        
+        <span class="k">while</span><span class="p">(</span><span class="n">n</span><span class="o">%</span><span class="k">2</span> == 0):
+            <span class="n">n</span> <span class="o">/=</span> <span class="mi">2</span>
+        
+        <span class="k">return</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Jun-07,-2020">Jun 07, 2020<a class="anchor-link" href="#Jun-07,-2020">&#182;</a></h1><h2 id="Coin-Change-2"><a href="https://leetcode.com/problems/coin-change-2/">Coin Change 2</a><a class="anchor-link" href="#Coin-Change-2">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">change</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">amount</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">coins</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+        
+        <span class="n">memo</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">amount</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)]</span>
+        <span class="n">memo</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+        
+        <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">coins</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">amt</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">amount</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+                <span class="k">if</span> <span class="n">amt</span> <span class="o">&gt;=</span> <span class="n">c</span><span class="p">:</span>
+                    <span class="n">memo</span><span class="p">[</span><span class="n">amt</span><span class="p">]</span> <span class="o">+=</span> <span class="n">memo</span><span class="p">[</span><span class="n">amt</span><span class="o">-</span><span class="n">c</span><span class="p">]</span>
+                    
+        <span class="k">return</span> <span class="n">memo</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Jun-06,-2020">Jun 06, 2020<a class="anchor-link" href="#Jun-06,-2020">&#182;</a></h1><h2 id="Queue-Reconstruction-by-Height"><a href="https://leetcode.com/problems/queue-reconstruction-by-height/">Queue Reconstruction by Height</a><a class="anchor-link" href="#Queue-Reconstruction-by-Height">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -13137,7 +13216,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Jun-05,-2020">Jun 05, 2020<a class="anchor-link" href="#Jun-05,-2020">&#182;</a></h1><h2 id="Random-Pick-with-Weight">Random Pick with Weight<a class="anchor-link" href="#Random-Pick-with-Weight">&#182;</a></h2>
+<h1 id="Jun-05,-2020">Jun 05, 2020<a class="anchor-link" href="#Jun-05,-2020">&#182;</a></h1><h2 id="Random-Pick-with-Weight"><a href="https://leetcode.com/problems/random-pick-with-weight/">Random Pick with Weight</a><a class="anchor-link" href="#Random-Pick-with-Weight">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -13187,7 +13266,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Jun-04,-2020">Jun 04, 2020<a class="anchor-link" href="#Jun-04,-2020">&#182;</a></h1><h2 id="Reverse-String">Reverse String<a class="anchor-link" href="#Reverse-String">&#182;</a></h2>
+<h1 id="Jun-04,-2020">Jun 04, 2020<a class="anchor-link" href="#Jun-04,-2020">&#182;</a></h1><h2 id="Reverse-String"><a href="https://leetcode.com/problems/reverse-string/">Reverse String</a><a class="anchor-link" href="#Reverse-String">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -13218,7 +13297,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Jun-03,-2020">Jun 03, 2020<a class="anchor-link" href="#Jun-03,-2020">&#182;</a></h1><h2 id="Two-City-Scheduling">Two City Scheduling<a class="anchor-link" href="#Two-City-Scheduling">&#182;</a></h2>
+<h1 id="Jun-03,-2020">Jun 03, 2020<a class="anchor-link" href="#Jun-03,-2020">&#182;</a></h1><h2 id="Two-City-Scheduling"><a href="https://leetcode.com/problems/two-city-scheduling/">Two City Scheduling</a><a class="anchor-link" href="#Two-City-Scheduling">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -13251,7 +13330,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Jun-02,-2020">Jun 02, 2020<a class="anchor-link" href="#Jun-02,-2020">&#182;</a></h1><h2 id="Delete-Node-in-a-Linked-List">Delete Node in a Linked List<a class="anchor-link" href="#Delete-Node-in-a-Linked-List">&#182;</a></h2>
+<h1 id="Jun-02,-2020">Jun 02, 2020<a class="anchor-link" href="#Jun-02,-2020">&#182;</a></h1><h2 id="Delete-Node-in-a-Linked-List"><a href="https://leetcode.com/problems/delete-node-in-a-linked-list/">Delete Node in a Linked List</a><a class="anchor-link" href="#Delete-Node-in-a-Linked-List">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -13278,7 +13357,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Jun-01,-2020">Jun 01, 2020<a class="anchor-link" href="#Jun-01,-2020">&#182;</a></h1><h2 id="Invert-Binary-Tree">Invert Binary Tree<a class="anchor-link" href="#Invert-Binary-Tree">&#182;</a></h2>
+<h1 id="Jun-01,-2020">Jun 01, 2020<a class="anchor-link" href="#Jun-01,-2020">&#182;</a></h1><h2 id="Invert-Binary-Tree"><a href="https://leetcode.com/problems/invert-binary-tree/">Invert Binary Tree</a><a class="anchor-link" href="#Invert-Binary-Tree">&#182;</a></h2>
 </div>
 </div>
 </div>
