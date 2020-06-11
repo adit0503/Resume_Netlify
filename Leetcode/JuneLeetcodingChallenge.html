@@ -13090,6 +13090,41 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="June-11,-2020">June 11, 2020<a class="anchor-link" href="#June-11,-2020">&#182;</a></h1><h2 id="Sort-Colors"><a href="https://leetcode.com/problems/sort-colors/">Sort Colors</a><a class="anchor-link" href="#Sort-Colors">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">sortColors</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nums</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Do not return anything, modify nums in-place instead.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        
+        <span class="n">temp</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">:</span>
+            <span class="n">temp</span><span class="p">[</span><span class="n">n</span><span class="p">]</span> <span class="o">=</span> <span class="n">temp</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+           
+        <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+            <span class="n">l</span> <span class="o">=</span> <span class="n">temp</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">l</span><span class="p">):</span>
+                <span class="n">nums</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span>
+                <span class="n">k</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="June-10,-2020">June 10, 2020<a class="anchor-link" href="#June-10,-2020">&#182;</a></h1><h2 id="Search-Insert-Position"><a href="https://leetcode.com/problems/search-insert-position/">Search Insert Position</a><a class="anchor-link" href="#Search-Insert-Position">&#182;</a></h2>
 </div>
 </div>
